@@ -10,19 +10,22 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
 
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: "true"
+
       - key: DB_TYPE
         value: postgresdb
 
       # --- Neon DB Config ---
       - key: DB_POSTGRESDB_HOST
-        value: <your-neon-host>           # e.g. ep-silent-xxx.ap-southeast-1.aws.neon.tech
+        value: ""         # e.g. ep-silent-xxx.ap-southeast-1.aws.neon.tech
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
-        value: <your-db-name>
+        value: ""
       - key: DB_POSTGRESDB_USER
-        value: <your-user>
+        value: ""
       - key: DB_POSTGRESDB_PASSWORD
-        value: <your-password>
+        value: ""
       - key: DB_POSTGRESDB_SSL
         value: "true"
