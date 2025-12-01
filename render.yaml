@@ -27,5 +27,11 @@ services:
         sync: false
       - key: DB_POSTGRESDB_PASSWORD
         sync: false
+        
       - key: DB_POSTGRESDB_SSL
         value: "true"
+
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_HOST
+        value: "0.0.0.0"
