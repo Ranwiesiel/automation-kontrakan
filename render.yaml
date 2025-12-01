@@ -18,14 +18,14 @@ services:
 
       # --- Neon DB Config ---
       - key: DB_POSTGRESDB_HOST
-        value: ""         # e.g. ep-silent-xxx.ap-southeast-1.aws.neon.tech
+        sync: false
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
-        value: ""
+        sync: false
       - key: DB_POSTGRESDB_USER
-        value: ""
+        sync: false
       - key: DB_POSTGRESDB_PASSWORD
-        value: ""
+        sync: false
       - key: DB_POSTGRESDB_SSL
         value: "true"
